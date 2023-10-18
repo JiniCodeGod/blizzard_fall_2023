@@ -1,27 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:word_find_app/home_screen.dart';
+import 'package:word_find_app/start_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(
-      fontFamily: 'Nunito'
-    ),
-    home: Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/background.png'),
-          )
-        ),
-        child: Center(
-          child: Text('Word Find ',
-          style: TextStyle(
-              fontFamily: 'Ribeye',
-            fontSize: 50
-          ),
-        ),
-        ),
-      ),
-      ),
-    ),
-  );
+    theme: ThemeData(fontFamily: 'Nunito'),
+    home: StartPage(),
+  ));
 }
