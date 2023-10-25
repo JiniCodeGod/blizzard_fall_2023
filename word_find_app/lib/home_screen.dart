@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:word_find_app/components/gradient_letter.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,37 +19,7 @@ class HomeScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                      width: 60,
-                      height: 60,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(18),
-                          color: Color(0xFFFF9002)),
-                      child: Align(
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(8),
-                              gradient: LinearGradient(
-                                  colors: [
-                                    Color.fromRGBO(255, 144, 2, 0),
-                                    Color(0xFFE48000)
-                                  ],
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  stops: [-0.025, 1.6875],
-                                  transform: GradientRotation(180))),
-                          child: Text(
-                            'W',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 38,
-                              fontFamily: 'Ribeye',
-                              fontWeight: FontWeight.w400,
-                              height: 0,
-                            ),
-                          ),
-                        ),
-                      )),
+                  GradientLetter(letter: 'W', height: 22, width: 22),
                   Padding(padding: EdgeInsets.only(left: 10)),
                   Container(
                       width: 60,
